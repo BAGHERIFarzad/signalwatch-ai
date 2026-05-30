@@ -1,0 +1,133 @@
+# =========================
+# SignalWatch AI - Git Ignore
+# =========================
+
+# -------------------------
+# OS files
+# -------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------------------------
+# IDE / Editor
+# -------------------------
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Keep optional VS Code recommendations if needed later
+# !.vscode/extensions.json
+
+# -------------------------
+# .NET / ASP.NET Core
+# -------------------------
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+
+# Rider / ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# Visual Studio
+.vs/
+
+# Test results
+TestResults/
+coverage/
+coverage.cobertura.xml
+*.trx
+
+# Publish output
+publish/
+out/
+
+# -------------------------
+# ASP.NET local settings
+# -------------------------
+appsettings.Local.json
+appsettings.Production.json
+appsettings.Staging.json
+
+# IMPORTANT:
+# We keep appsettings.Development.json allowed only if it has no secrets.
+# If you accidentally put secrets inside it, remove them before commit.
+
+# -------------------------
+# Environment variables / secrets
+# -------------------------
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.pfx
+*.crt
+*.cer
+
+# -------------------------
+# Frontend / Node / React
+# -------------------------
+node_modules/
+dist/
+build/
+.vite/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -------------------------
+# Package manager files
+# -------------------------
+.pnpm-store/
+
+# -------------------------
+# Logs
+# -------------------------
+logs/
+*.log
+
+# -------------------------
+# Temporary files
+# -------------------------
+tmp/
+temp/
+*.tmp
+
+# -------------------------
+# Hackathon generated files
+# -------------------------
+docs/screenshots/raw/
+recordings/
+videos/raw/
+exports/
+reports/
+
+# -------------------------
+# Local database files
+# -------------------------
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# -------------------------
+# Secrets safety
+# -------------------------
+secrets.json
+local.settings.json
